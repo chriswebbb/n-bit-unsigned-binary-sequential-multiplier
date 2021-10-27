@@ -1,24 +1,3 @@
-/////////////////////////////////////////////////////////////////////
-// Design unit: test_multiplier
-//            :
-// File name  : test_multiplier.sv
-//            :
-// Description: Code for M4 Lab exercise
-//            : Basic testbench for multiplier
-//            :
-// Limitations: None
-//            : 
-// System     : SystemVerilog IEEE 1800-2005
-//            :
-// Author     : Mark Zwolinski
-//            : School of Electronics and Computer Science
-//            : University of Southampton
-//            : Southampton SO17 1BJ, UK
-//            : mz@ecs.soton.ac.uk
-//
-// Revision   : Version 1.0 16/10/17
-/////////////////////////////////////////////////////////////////////
-
 module test_multiplier;
 
 logic start, n_rst, clock; 
