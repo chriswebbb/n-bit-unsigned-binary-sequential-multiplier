@@ -1,0 +1,120 @@
+# Compile of sequencer.sv failed with 3 errors.
+# Compile of sequencer.sv failed with 2 errors.
+# Compile of sequencer.sv was successful.
+vsim M4.test_multiplier
+# vsim M4.test_multiplier 
+# Start time: 19:25:34 on Nov 08,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+run -all
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+quit -sim
+# End time: 19:26:35 on Nov 08,2020, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 4
+vsim M4.test_multiplier
+# vsim M4.test_multiplier 
+# Start time: 20:24:05 on Nov 08,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+run -all
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+add wave -position end sim:/std::semaphore::new/*
+# ** UI-Msg: (vish-4014) No objects found matching '/std::semaphore::new/*'.
+add wave -position end sim:/test_multiplier/*
+# ** UI-Msg: (vish-4014) No objects found matching '/test_multiplier/*'.
+add wave -position end sim:/std/*
+# ** UI-Msg: (vish-4014) No objects found matching '/std/*'.
+add wave -position end sim:/#vsim_capacity#/*
+add wave -position end sim:/test_multiplier/#ALWAYS#49/*
+# ** UI-Msg: (vish-4014) No objects found matching '/test_multiplier/#ALWAYS#49/*'.
+add wave -position insertpoint sim:/test_multiplier/#ALWAYS#49/*
+# ** UI-Msg: (vish-4014) No objects found matching '/test_multiplier/#ALWAYS#49/*'.
+run -all
+add dataflow sim:/test_multiplier/*
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.test_multiplier(fast)
+run -all
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+# Compile of test_multiplier.sv was successful.
+vsim M4.test_multiplier
+# End time: 21:31:29 on Nov 08,2020, Elapsed time: 1:07:24
+# Errors: 0, Warnings: 2
+# vsim M4.test_multiplier 
+# Start time: 21:31:29 on Nov 08,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+run -all
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+run
+quit -sim
+# End time: 21:35:13 on Nov 08,2020, Elapsed time: 0:03:44
+# Errors: 0, Warnings: 1
+vsim -vopt M4.test_multiplier
+# vsim -vopt M4.test_multiplier 
+# Start time: 21:35:18 on Nov 08,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+run -all
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+quit -sim
+# End time: 21:35:48 on Nov 08,2020, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 1
+vsim -vopt M4.test_multiplier
+# vsim -vopt M4.test_multiplier 
+# Start time: 21:36:23 on Nov 08,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+run
+run
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/test_multiplier/*
+# ** UI-Msg: (vish-4014) No objects found matching '/test_multiplier/*'.
+add wave sim:/test_multiplier/*
+# ** UI-Msg: (vish-4014) No objects found matching '/test_multiplier/*'.
+quit -sim
+# End time: 21:38:42 on Nov 08,2020, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 1
+vsim M4.test_multiplier
+# vsim M4.test_multiplier 
+# Start time: 21:38:47 on Nov 08,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+# Compile of adder.sv was successful.
+# Compile of multiplier.sv was successful.
+# Compile of reg_m.sv was successful.
+# Compile of register.sv was successful.
+# Compile of sequencer.sv was successful.
+# Compile of test_multiplier.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (//filestore.soton.ac.uk/users/cw8g19/mydocuments/Year_Two/labs/M4/M4.mpf).  File can not be renamed.
+quit -sim
+# End time: 21:39:19 on Nov 08,2020, Elapsed time: 0:00:32
+# Errors: 1, Warnings: 2
+vsim M4._opt
+# vsim M4._opt 
+# Start time: 21:39:21 on Nov 08,2020
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
+# Loading sv_std.std
+# Loading work.test_multiplier(fast)
+run
+run
+# Test passed: at                  170 Min =  3, Qin =  5, AQ =  15
+add wave -position insertpoint {multiplier m0 (.*);}
+# ** UI-Msg: (vish-4014) No objects found matching 'multiplier m0 (.*);'.
+quit -sim
+# End time: 22:05:05 on Nov 08,2020, Elapsed time: 0:25:44
+# Errors: 0, Warnings: 2
