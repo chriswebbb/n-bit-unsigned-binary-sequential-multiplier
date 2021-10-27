@@ -1,25 +1,3 @@
-/////////////////////////////////////////////////////////////////////
-// Design unit: register
-//            :
-// File name  : register.sv
-//            :
-// Description: Code for M4 Lab exercise
-//            : registers C and AQ
-//            :
-// Limitations: None
-//            : 
-// System     : SystemVerilog IEEE 1800-2005
-//            :
-// Author     : Tom Kazmierski & Mark Zwolinski
-//            : School of Electronics and Computer Science
-//            : University of Southampton
-//            : Southampton SO17 1BJ, UK
-//            : mz@ecs.soton.ac.uk
-//
-// Revision   : Version 1.0 17/10/13
-//            : modified for DE1-SoC: mz, 16/10/17
-/////////////////////////////////////////////////////////////////////
-
 module register (input logic clock, reset, add, shift, C,
               input logic[7:0] Qin, Sum, output logic[15:0] AQ);
 
