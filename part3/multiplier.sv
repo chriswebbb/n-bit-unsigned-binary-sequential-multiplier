@@ -1,25 +1,3 @@
-/////////////////////////////////////////////////////////////////////
-// Design unit: multiplier
-//            :
-// File name  : multiplier.sv
-//            :
-// Description: Code for M4 Lab exercise
-//            : Top-level module for shift and add multiplier
-//            :
-// Limitations: None
-//            : 
-// System     : SystemVerilog IEEE 1800-2005
-//            :
-// Author     : Tom Kazmierski & Mark Zwolinski
-//            : School of Electronics and Computer Science
-//            : University of Southampton
-//            : Southampton SO17 1BJ, UK
-//            : mz@ecs.soton.ac.uk
-//
-// Revision   : Version 1.0 17/10/13
-//            : modified for DE1-SoC: mz, 16/10/17
-/////////////////////////////////////////////////////////////////////
-
 module multiplier(input logic start, n_rst, clock, input logic [7:0] Min, Qin, 
                   output logic ready, output logic[15:0] AQ);
 
