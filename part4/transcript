@@ -1,0 +1,10 @@
+# Compile of adder.sv was successful.
+# Compile of multiplier.sv was successful.
+# Compile of reg_m.sv was successful.
+# Compile of register.sv was successful.
+# Compile of sequencer.sv was successful.
+# Compile of test_multiplier.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (//filestore.soton.ac.uk/users/cw8g19/mydocuments/Year_Two/labs/M4/Part_3/M4_part3.mpf).  File can not be renamed.
